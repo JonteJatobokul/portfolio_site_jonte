@@ -57,11 +57,16 @@ list-style: none;
     font-weight: 400;
     font-size: 1.3em;
     }
-    
+
 .div{
     margin: 16px;
 }
 
+.green{
+    background-color: #C7C49C;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
 .behance{
     text-decoration: underline;
     text-decoration-color: #55554F;
@@ -113,7 +118,8 @@ list-style: none;
 }
 
 .icon{
-    width: 20px;
+    width: 24px;
+    margin: 5px ;
 }
 
 .up{
