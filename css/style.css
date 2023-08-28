@@ -12,9 +12,11 @@ body{
     font-weight: 300;
     line-height: 1.3;
 }
+
 main{
     padding-top: 110px;
 }
+
 header{
     background-color: #FDF8EE;
     margin: 0px;
@@ -37,16 +39,15 @@ a:visited{
     color: #55554F;
 
 }
-a:hover,
-:focus{
+
+a:hover, a:focus, a:active{
     color: #767522;
 }
-a:active{
-    color: #767522;
-}
+
 h1, h2, h3, h4 {
     line-height: 1.3;
   }
+
 h1 {
     font-size: 1em;
     font-weight: 700;
@@ -117,7 +118,7 @@ nav>ul>li{
     margin: 16px 0;
 }
 
-.button:hover,:active, :focus{
+.button:hover, .button:active, .button:focus{
     color: #090C08;
     border-color: #090C08;
 }
@@ -139,6 +140,15 @@ nav>ul>li{
     margin: 24px 0;
 }
 
+/* || ABOUT STYLES */
+
+.me{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
 
 /* || FOOTER STYLES */
 
@@ -165,37 +175,41 @@ nav>ul>li{
     margin: 16px 0;
 }
 
-.email:hover{
+.email:hover, .email:active, .email:focus{
     color: #090C08;
     box-shadow: 4px 4px 4px #575619 inset;
 }
 
 .icon{
-    width: 24px;
-    margin: 5px ;
+    width: 30px;
+    margin: 12px ;
+}
+
+.icon:hover, .icon:active, .icon:focus{
+    width: 34px;
+    margin: 10px;
 }
 
 .up{
     color: #FDF8EE;
     text-decoration: underline;
     text-decoration-color: #FDF8EE;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    
 }
 
-.up{
-    color: #FDF8EE;
-    text-decoration: underline;
-    text-decoration-color: #FDF8EE;
+.up:hover, .up:active, .up:focus, .up:visited{
     font-size: 0.8em;
-}
-.up:hover, :active, :focus, :visited{
-    color: #090C08;
-    text-decoration-color: #090C08 ;
+    color: #FDF8EE;
 }
 
 #copyright{
-    font-size: 0.6em;
-    font-weight: 600;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.aligncenter{
     text-align: center;
 }
 
