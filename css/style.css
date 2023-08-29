@@ -1,5 +1,35 @@
 /* || GENERAL STYLES */
 
+@font-face {
+    font-family: 'Oswald';
+    src: url('../files/Oswald-SemiBold.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Oswald';
+    src: url('../files/Oswald-Meium.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Oswald';
+    src: url('../files/Oswald-Regular.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../files/Karla-Bold.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Karla';
+    src: url('../files/Karla-SemiBold.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Karla';
+    src: url('../files/Karla-Regular.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Karla';
+    src: url('../files/Karla-Light.ttf') format('truetype');
+    }
+
 * {
     box-sizing: border-box;
   }
