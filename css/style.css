@@ -116,6 +116,7 @@ nav>ul>li{
     padding-top: 4px;
     padding-bottom: 4px;
     margin: 16px 0;
+    transition: 0.5s border-color;
 }
 
 .button:hover, .button:active, .button:focus{
@@ -143,6 +144,40 @@ nav>ul>li{
     margin: 24px 0;
 }
 
+.animation{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {fill: #fcffad;}
+    50% {fill: #edc655;}
+    100% {fill: #f76414;}
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(30px,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation: 20s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(160px, 48px);}
+    to {transform: translate(500px,48px);}
+  }
+
+  .cloud-back {
+    animation: 24s cloud-move-reverse infinite alternate linear;
+  }
+
 /* || ABOUT STYLES */
 
 .me{
@@ -158,6 +193,9 @@ nav>ul>li{
     padding: 24px;
     border-radius: 8px;
     width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* || FOOTER STYLES */
@@ -183,6 +221,7 @@ nav>ul>li{
     padding-bottom: 6px;
     border-radius: 8px;
     margin: 16px 0;
+    transition: 0.3s box-shadow;
 }
 
 .email:hover, .email:active, .email:focus{
@@ -224,6 +263,44 @@ nav>ul>li{
 }
 
 /* ==============================
+Medium devices (540px and larger)
+================================= */
+@media only screen and (min-width: 540px) {
+
+    .me{
+        width: unset;
+        display: block;
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: unset;
+    }
+
+    [class*="col-"] {
+        float: left;
+      }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    .col-md-4 {
+        width: 50%;
+        padding-top: 24px;
+        padding-right: 40px;
+      }
+
+    .col-md-6{
+        width: 50%;
+    }
+
+    .col-md-8 {
+        width: 50%;
+      }
+}
+
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
@@ -236,16 +313,19 @@ Medium devices (640px and larger)
         margin-top: unset;
     }
     header{
+        text-align: unset;
         padding: 16px 32px 0px 32px;
     }
     #logo{
         font-size: 1.5em;
+        width: auto;
     }
     nav {
         width: auto;
         float: right;
       }
-      .div{
+    
+    .div{
         margin: 32px;
     }
 
@@ -290,15 +370,62 @@ Medium devices (640px and larger)
     .col-md-8 {
         width: 66.66%;
       }
+
+    #skills{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+    .div{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body{
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+
+    main{
+        padding-top: 160px;
+    }
+
+    #hero{
+        max-width: 600px;
+        margin-bottom: 80px;
+    }
+
+    #skills{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+    body{
+        font-size: 24px;
+    }
+
+    main{
+        padding-top: 190px;
+    }
+
+    .div{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
