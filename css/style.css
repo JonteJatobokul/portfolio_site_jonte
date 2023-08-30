@@ -1,4 +1,7 @@
 /* || GENERAL STYLES */
+html{
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: 'Oswald';
@@ -131,14 +134,14 @@ nav>ul>li{
     font-size: 1.3em;
 }
 
-.behance{
+.behance{  /* link to behance page */
     text-decoration: underline;
     text-decoration-color: #55554F;
     font-size: 0.8em;
     display: block;
 }
 
-.button{
+.button{  /* view project and CV */
     display: inline-block;
     border-radius: 8px;
     border: 3px solid #767522;
@@ -236,13 +239,13 @@ nav>ul>li{
     color: #FDF8EE;
 }
 
-#foot{
+#foot{ /*everythig that is in the footer except for the background bc of padding */
     padding-top: 16px;
     padding-bottom: 8px;
     margin-bottom: 0;
 }
 
-.email{
+.email{ /* button */
     display: inline-block;
     color: #090C08;
     background-color: #FDF8EE;
@@ -353,6 +356,7 @@ Medium devices (640px and larger)
     nav {
         width: auto;
         float: right;
+        margin-top: -40px;
       }
     
     .div{
