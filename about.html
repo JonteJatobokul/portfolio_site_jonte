@@ -6,26 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Jonte Thiele">
         <meta name="keywords" content="UI/UX Design, Portfolio, design, berlin">
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+             crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Karla">
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Oswald">
         <title>About Me</title>
     </head>
     <body>
         <header>
-            <div >
-                <a href="index.html" id="logo">Jonte Thiele</a>
+            <div>
+                <a href="index.html" id="logo">jonte thiele</a>
             </div>
+            <div class="navtoggle" id="myNavtoggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
-                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#footer" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="burger" onclick="menuToggle()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 54 31" fill="none">
+                            <path d="M1 1H52.9852" stroke="#090C08" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M1.01489 16.2632H53.0001" stroke="#090C08" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M1.01489 30H53.0001" stroke="#090C08" stroke-width="2" stroke-linecap="round"/>
+                        </svg></a></li>
                 </ul>
             </nav>
+            </div>
         </header>
         <main  id="header">
             <div class="div">
@@ -76,9 +84,9 @@
             <div class="div" id="foot">
             
                 <h2>Liked what you saw?<br>Get in Touch!</h2>
-                <p>You have a project that needs a designer or you are a designer yourself and are looking for someone to work with?</p>
+                <p>You have a project that needs a designer or you are a designer yourself and you are looking for someone to work with?</p>
                 <div>
-                    <a href="mailto:jthiesall@gmail.com" class="email">send email</a>
+                    <a href="mailto:jthiesall@gmail.com" class="email">send me an email</a>
                 </div>
             
             <diiv class="aligncenter">

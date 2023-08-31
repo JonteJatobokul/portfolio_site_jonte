@@ -47,7 +47,7 @@ body{
 }
 
 main{
-    padding-top: 110px;
+    padding-top: 88px;
 }
 
 header{
@@ -110,10 +110,28 @@ list-style: none;
 padding: 0;
 }
 
-nav>ul>li{
-    display: inline-block;
-    padding: 0 16px;
-}
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .burger {
+    position: absolute;
+    right: 0;
+    top: -27px;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 16px;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 2px;
+  }
 
 /* || LAYOUT STYLES */
 
@@ -131,7 +149,7 @@ nav>ul>li{
     font-family: 'oswald', sans-serif;
     color: #767522;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .behance{  /* link to behance page */
@@ -281,7 +299,7 @@ nav>ul>li{
 }
 
 .up:hover, .up:active, .up:focus, .up:visited{
-    font-size: 0.8em;
+    font-size: 0.75em;
     color: #FDF8EE;
 }
 
@@ -353,11 +371,28 @@ Medium devices (640px and larger)
         font-size: 1.5em;
         width: auto;
     }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+    .navtoggle.responsive li {
+        padding: 0 16px;
+    }
+    
     nav {
         width: auto;
         float: right;
         margin-top: -40px;
       }
+
+    nav>ul>li{
+        padding: 0 16px;
+    }
     
     .div{
         margin: 32px;
@@ -431,7 +466,7 @@ Large devices (1024px or larger)
     }
 
     main{
-        padding-top: 160px;
+        padding-top: 140px;
     }
 
     #hero{
