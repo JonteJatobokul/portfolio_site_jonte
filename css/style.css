@@ -303,7 +303,6 @@ padding: 0;
     text-decoration: underline;
     text-decoration-color: #FDF8EE;
     font-size: 0.7em;
-    
 }
 
 .up:hover, .up:active, .up:focus, .up:visited{
@@ -315,6 +314,17 @@ padding: 0;
     font-size: 0.7em;
     font-weight: 400;
     text-align: center;
+}
+
+.pp{
+    color: #FDF8EE;
+    text-decoration: underline;
+    text-decoration-color: #FDF8EE;
+    font-size: 0.7em;
+}
+
+.pp:hover, .pp:active, .pp:focus, pp:visited{
+    color: #FDF8EE;
 }
 
 .aligncenter{
