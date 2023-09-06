@@ -67,10 +67,6 @@ a{
     text-decoration: none;
     font-weight: 700;
 }
-a:visited{
-    color: #55554F;
-
-}
 
 a:hover, a:focus, a:active{
     color: #767522;
